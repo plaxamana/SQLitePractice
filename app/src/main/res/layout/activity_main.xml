@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="4"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_enterTask"
+        android:paddingBottom="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/enter_task"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <TextView
+            android:id="@+id/tv_taskId"
+            android:text="@string/task_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/et_taskId"
+            android:inputType="number"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <TextView
+            android:id="@+id/tv_taskName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/task_name" />
+
+        <EditText
+            android:id="@+id/et_taskName"
+            android:inputType="textPersonName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <TextView
+            android:id="@+id/tv_taskDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/task_desc" />
+
+        <EditText
+            android:id="@+id/et_taskDesc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:inputType="textPersonName" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <Button
+            android:id="@+id/btn_showTask"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="showTask"
+            android:text="@string/show_task" />
+
+        <Button
+            android:id="@+id/btn_addTask"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="addTask"
+            android:text="@string/add_task" />
+
+        <Button
+            android:id="@+id/btn_editTask"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="editTask"
+            android:text="@string/edit" />
+
+        <Button
+            android:id="@+id/btn_deleteTask"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="deleteTask"
+            android:text="@string/delete" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/myListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></ListView>
+
+</LinearLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="16dp"
+    android:weightSum="5">
+
+    <TextView
+        android:id="@+id/taskID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:id="@+id/taskName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Final test"
+        android:textSize="18sp"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:id="@+id/taskDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Write final COMP304 test"
+        android:textAlignment="textEnd"
+        android:layout_weight="3"
+        android:textSize="18sp" />
+
+</LinearLayout>

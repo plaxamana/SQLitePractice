@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Task Manager</string>
+    <string name="enter_task">Enter task:</string>
+    <string name="task_id">Task id:</string>
+    <string name="task_name">Task name:</string>
+    <string name="task_desc">Task Description:</string>
+    <string name="show_task">Show task</string>
+    <string name="add_task">Add task</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+
+</resources>
